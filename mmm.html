@@ -6,124 +6,61 @@
     <title>Личная страница Мухаметжана</title>
     <style>
         body {
+            background-color: #121212; /* Темный фон */
+            color: #ffffff; /* Белый текст */
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #e0e0e0;
-            animation: fadeIn 1.5s;
+            padding: 20px;
+            transition: background-color 0.5s, color 0.5s; /* Плавные переходы */
+            animation: fadeIn 1s; /* Анимация появления */
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
-        header {
-            background: rgba(33, 150, 243, 0.9);
-            padding: 20px 0;
-            text-align: center;
-            animation: slideIn 1s;
+
+        h1, h2 {
+            color: #8a2be2; /* Яркий фиолетовый цвет для заголовков */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Тень для заголовков */
+            margin-bottom: 10px;
         }
 
-        @keyframes slideIn {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
+        a {
+            color: #1e90ff; /* Цвет ссылок */
+            transition: color 0.3s; /* Плавный переход цвета */
         }
-        
-        main {
+
+        a:hover {
+            color: #8a2be2; /* Яркий фиолетовый при наведении */
+            text-shadow: 0 0 10px #8a2be2; /* Тень при наведении */
+        }
+
+        .container {
+            max-width: 800px; /* Максимальная ширина контейнера */
+            margin: auto;
             padding: 20px;
-            animation: fadeInUp 1s;
+            border-radius: 10px; /* Закругленные углы */
+            background-color: rgba(30, 30, 30, 0.9); /* Полупрозрачный фон для контейнера */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Тень для контейнера */
         }
 
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        section {
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s, background 0.3s;
-        }
-        
-        section:hover {
-            transform: scale(1.03);
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        h2 {
-            color: #81d4fa;
-            transition: color 0.3s;
-        }
-
-        h2:hover {
-            color: #ffdd57;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(33, 150, 243, 0.9);
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            animation: slideIn 1s;
-        }
-
-        .social-links {
-            margin-top: 15px;
-        }
-
-        .social-links a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s, transform 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #ffdd57;
-            transform: scale(1.1);
+        .fade-in {
+            animation: fadeIn 1.5s ease-in; /* Анимация для текста */
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container fade-in">
         <h1>Привет, я Мухаметжан!</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Обо мне</h2>
-            <p>Меня зовут Мухаметжан, я родился 30 апреля 2007 года в городе Арыс. В этом году я окончил гимназию для одаренных детей №90 и поступил на специальность «Компьютерные науки» в СДУ.</p>
-        </section>
-        <section>
-            <h2>Семья</h2>
-            <p>В моей семье много детей: я старший, у меня 5 младших братьев. Мой папа Бахытжан, мама Наркыз, и у меня есть дедушка Абдисаттар и бабушка Гулнара.</p>
-        </section>
-        <section>
-            <h2>Друзья</h2>
-            <p>У меня есть две лучшие подруги — Айша и Жанар, а также подруга Дина. Я ценю дружбу и стараюсь поддерживать общение с ними.</p>
-        </section>
-        <section>
-            <h2>Цели</h2>
-            <p>Я стремлюсь зарабатывать больше, строить успешную карьеру и сохранить баланс между учебой и социальной жизнью.</p>
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <div class="social-links">
-                <p>Вы можете найти меня здесь:</p>
-                <a href="https://www.instagram.com/babaigoi?igsh=MWJiczVtdDBsc2l0Mg==" target="_blank">Instagram</a>
-                <a href="https://t.me/babaigoi" target="_blank">Telegram</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Мухаметжан. Все права защищены.</p>
-    </footer>
+        <h2>О себе</h2>
+        <p>Я родом из города Арыс и старший ребенок в семье. В 2024 году я окончил гимназию для одаренных детей №90 в Шымкенте, набрав 130 баллов на ЕНТ. В этом году поступил на специальность «Компьютерные науки» в СДУ.</p>
+        <p>Мой день рождения — 30 апреля 2007 года.</p>
+        <h2>Семья</h2>
+        <p>У меня есть папа Бахытжан, мама Наркыз, а также 5 младших братьев. У моего папы есть брат Данияр и сестра Наргиза. Я внук, у меня один дедушка — Абдисаттар и бабушка — Гулнара.</p>
+        <h2>Контакты</h2>
+        <p>Мой Instagram: <a href="https://www.instagram.com/babaigoi?igsh=MWJiczVtdDBsc2l0Mg==" target="_blank">babaigoi</a></p>
+        <p>Мой Telegram: <a href="https://t.me/babaigoi" target="_blank">@babaigoi</a></p>
+    </div>
 </body>
 </html>
